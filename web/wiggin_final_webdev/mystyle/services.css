@@ -1,0 +1,144 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 100px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2;
+    background-color: rgb(229, 142, 194);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #0a0a0a;
+    color: #f00b63;
+    padding: 20px 0;
+}
+
+header h1 {
+    float: left;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #dad5d0;
+    text-decoration: none;
+}
+
+main {
+    padding: 100px 0;
+   
+}
+
+.menu {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    gap: 50px;
+}
+
+.menu-item {
+    width: 200px;
+    height: 200px;
+    background-color: #070507;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
+@media screen and (max-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+
+    }
+}
+header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+  .navbar a {
+    color: #000;
+  }
+  .hero-section .content {
+    text-align: center;
+  }
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
